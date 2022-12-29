@@ -17,18 +17,32 @@
 
 <body class="text-gray-200 font-serif">
     <!-- Navbar -->
-    <nav class="flex px-5 py-12 justify-between text-3xl md:text-3xl lg:px-10 lg:text-4xl xl:text-5xl xl:px-15">
-        <a href="#index.html">My Portfolio Website</a>
-        <ul class="flex space-x-4 justify-end lg:space-x-6 xl:space-x-8 xl:mx-15">
+    <nav class="flex px-5 py-12 justify-between text-3xl lg:px-10 xl:px-15">
+        <a class="md:text-5xl" href="#index.html">My Portfolio Website</a>
+        <ul class="hidden lg:flex space-x-4 justify-end lg:space-x-6 xl:space-x-8 xl:mx-15">
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="mobileMenuButton lg:hidden">
+            <div
+                class="w-6 h-6 space-y-1 text-gray-200 hover:cursor-pointer border-gray-200 border-2 rounded-md">
+                <div class="ml-0.5 mt-1 w-4 h-0.5 hover:ml-0.5 hover:mt-1 hover:w-4 hover:h-0.5 bg-gray-200"></div>
+                <div class="ml-0.5 w-4 h-0.5 hover:ml-0.5 hover:w-4 hover:h-0.5 bg-gray-200"></div>
+                <div class="ml-0.5 w-4 h-0.5 hover:ml-0.5 hover:w-4 hover:h-0.5 bg-gray-200"></div>
+            </div>
+        </button>
     </nav>
+    <div class="mobileMenu hidden lg:hidden -mt-10 -mb-7 border-2 border-gray-200 rounded-md">
+        <ul class="grid justify-end pl-5">
+            <li><a class="text-2xl pr-5 float-right" href="#skills">Skills</a></li>
+            <li><a class="text-2xl pr-5" href="#contact">Contact</a></li>
+        </ul>
+    </div>
 
     <!-- Intro Section -->
-    <div class="flex justify-center items-center">
+    <div class="flex pt-10 justify-center items-center">
         <section>
-            <h1 class="text-6xl lg:text-8xl">Hi, I'm Dipesh</h1>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl">Hi, I'm Dipesh</h1>
             <h3 class="text-2xl pt-2 pb-10">a FrontEnd Web Developer</h3>
             <img class="w-72 rounded-full mx-auto" src="images/myImage.jpg" alt="My Image">
             <p class="pl-12 lg:ml-32
@@ -39,31 +53,46 @@
 
     <!-- Skills Section -->
     <div id="skills" class="pt-10 pb-3">
-        <h2 class="text-5xl text-center">My Skills</h2>
+        <h2 class="text-4xl text-center">My Skills</h2>
+
+    <!-- Web Design -->
         <div class="pt-10 pb-10">
-            <img class="w-32 float-left md:w-40 lg:w-52 xl:w-64" src="https://media.giphy.com/media/IHRIyAr24rTXLvIq8A/giphy.gif"
-                alt="Web Designing Image">
-            <h3 class="text-4xl pb-3 font-bold">Web Designing:</h3>
-            <p class="text-2xl md:text-3xl pb-3 clear-left xl:clear-none lg:clear-none">I have a good understanding of HTML, CSS, Bootstrap and Tailwind CSS.</p>
-            <p class="text-2xl lg:clear-left xl:clear-none">A few projects to showcase my designing skills are mentioned below-
-            <ul class="font-sans text-2xl">
-                <li class="py-2">1. <a class="underline hover:no-underline" href="#" target="_blank">Space Tourism Website</a> (made using plain CSS)</li>
-                <li class="py-2">2. <a class="underline hover:no-underline" href="https://dipesh1322.github.io/Tindog/" target="_blank">tindog</a> (made using Bootstrap)</li>
-                <li class="py-2">3. <a class="underline hover:no-underline" href="https://dipesh1322.github.io/Portfolio/" target="_blank">My Portfolio</a> (made using Tailwind)</li>
+            <img class="w-32 float-left md:w-40 lg:w-52 xl:w-64"
+                src="https://media.giphy.com/media/IHRIyAr24rTXLvIq8A/giphy.gif" alt="Web Designing Image">
+            <h3 class="text-3xl pb-3 font-bold">Web Designing:</h3>
+            <p class="text-2xl md:text-3xl pb-3 clear-left xl:clear-none lg:clear-none">I have a good understanding of
+                HTML, CSS, Bootstrap and Tailwind CSS.</p>
+            <p class="text-1xl lg:clear-left xl:clear-none">A few projects to showcase my designing skills are mentioned
+                below-
+            <ul class="font-sans text-xl">
+                <li class="py-2">1. <a class="underline hover:no-underline" href="#" target="_blank">Space Tourism
+                        Website</a> (made using plain CSS)</li>
+                <li class="py-2">2. <a class="underline hover:no-underline" href="https://dipesh1322.github.io/Tindog/"
+                        target="_blank">tindog</a> (made using Bootstrap)</li>
+                <li class="py-2">3. <a class="underline hover:no-underline"
+                        href="https://dipesh1322.github.io/Portfolio/" target="_blank">My Portfolio</a> (made using
+                    Tailwind)</li>
             </ul>
             </p>
         </div>
+
         <hr>
+
+        <!-- Web Development -->
         <div class="text-right pt-10 pb-10">
-            <img class="w-32 float-right md:w-40 lg:w-52 xl:w-64" src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif"
-                alt="Web Development Image">
-            <h3 class="text-4xl pb-3 font-bold">Web Development:</h3>
-            <p class="text-2xl md:text-3xl pb-3 clear-right xl:clear-none lg:clear-none" pb-3>I have a good grasp on JAVASCRIPT and it's libraries such as jquery and
+            <img class="w-32 float-right md:w-40 lg:w-52 xl:w-64"
+                src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif" alt="Web Development Image">
+            <h3 class="text-3xl pb-3 font-bold">Web Development:</h3>
+            <p class="text-2xl md:text-3xl pb-3 clear-right xl:clear-none lg:clear-none" pb-3>I have a good grasp on
+                JAVASCRIPT and it's libraries such as jquery and
                 React.</p>
-            <p class="text-2xl lg:clear-right xl:clear-none">A few projects to showcase my skills as a developer are mentioned below-</p>
-            <ul class="font-sans text-2xl">
-                <li class="py-2">1. <a class="underline hover:no-underline" href="#" target="_blank">Clone of website</a></li>
-                <li class="py-2">2. <a class="underline hover:no-underline" href="#" target="_blank">Ek aur website</a></li>
+            <p class="text-1xl lg:clear-right xl:clear-none">A few projects to showcase my skills as a developer are
+                mentioned below-</p>
+            <ul class="font-sans text-xl">
+                <li class="py-2">1. <a class="underline hover:no-underline" href="#" target="_blank">Clone of
+                        website</a></li>
+                <li class="py-2">2. <a class="underline hover:no-underline" href="#" target="_blank">Ek aur website</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -72,14 +101,16 @@
     <!-- Footer Section -->
     <div id="contact" class="text-center py-2">
         <footer>
-            <a class="px-4 text-3xl hover:text-gray-800" href="https://www.linkedin.com/in/dipesh-chaudhary-a89596136/" target="_blank"><span
-                    class="fa-brands fa-linkedin"></span></a>
-            <a class="px-4 text-3xl hover:text-gray-800" href="https://www.instagram.com/d.i.p.e.s.h_chaudhary/" target="_blank"><span
-                    class="fa-brands fa-instagram"></span></a>
-            <a class="px-4 text-3xl hover:text-gray-800" href="https://github.com/Dipesh1322" target="_blank"><span class="fa-brands fa-github"></span></a>
+            <a class="px-4 text-3xl hover:text-gray-800" href="https://www.linkedin.com/in/dipesh-chaudhary-a89596136/"
+                target="_blank"><span class="fa-brands fa-linkedin"></span></a>
+            <a class="px-4 text-3xl hover:text-gray-800" href="https://www.instagram.com/d.i.p.e.s.h_chaudhary/"
+                target="_blank"><span class="fa-brands fa-instagram"></span></a>
+            <a class="px-4 text-3xl hover:text-gray-800" href="https://github.com/Dipesh1322" target="_blank"><span
+                    class="fa-brands fa-github"></span></a>
             <p class="py-2">&copy2022 Dipesh Chaudhary</p>
         </footer>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
