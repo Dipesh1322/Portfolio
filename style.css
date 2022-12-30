@@ -23,7 +23,7 @@ nav ul li a:hover{
     overflow: hidden;
     /* background-color: purple; */
     height: 0;
-    width: 90vw;
+    width: 92vw;
     animation-name: slideDown;
     animation-duration: 1s;
     animation-fill-mode: forwards;
