@@ -9,7 +9,6 @@ nav ul li a:hover{
     color: rgb(68, 129, 151);
 }
 
-
 .divider{
     border-top: 8px dotted rgb(75, 52, 110);
     border-bottom: 0;
@@ -21,14 +20,11 @@ nav ul li a:hover{
 
 .box{
     overflow: hidden;
-    /* background-color: purple; */
     height: 0;
-    width: 90vw;
     animation-name: slideDown;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
-    /* animation-direction: reverse; */
 }
 
 @keyframes slideDown {
