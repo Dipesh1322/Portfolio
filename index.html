@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/3a1a5d2df2.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Arvo&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Custom CSS -->
@@ -15,9 +17,9 @@
     <title>My Portfolio Website</title>
 </head>
 
-<body class="text-black-200 font-serif bg-gradient-to-r from-[#CDB6B6] to-[#b9b9d2]">
+<body class="text-black-200 bg-[#b9b9d2]">
     <!-- Navbar -->
-    <nav class="flex px-5 pt-10 pb-4 justify-between text-3xl lg:px-10 xl:px-15 bg-gradient-to-l from-[#CDB6B6] to-[#b9b9d2]">
+    <nav class="flex px-5 pt-10 pb-4 justify-between text-3xl lg:px-10 xl:px-15 bg-[#CDB6B6]">
         <a class="md:text-5xl hover:text-[#464545]" href="#index.html">My Portfolio Website</a>
         <ul class="hidden lg:flex space-x-4 justify-end lg:space-x-6 xl:space-x-8 xl:mr-28">
             <li><a href="#skills">Skills</a></li>
@@ -33,7 +35,7 @@
     </nav>
     <div class="h-7">
         <div class="-mt-2">
-            <div class="mobileMenu hidden bg-gradient-to-l from-[#CDB6B6] to-[#b9b9d2] lg:hidden">
+            <div class="mobileMenu hidden bg-[#CDB6B6] lg:hidden">
                 <ul class="justify-end pr-5 grid">
                     <li><a class="text-2xl float-right hover:text-[#464545]" href="#skills">Skills</a></li>
                     <li><a class="text-2xl hover:text-[#464545]" href="#contact">Contact</a></li>
@@ -48,20 +50,20 @@
             <h1 class="text-5xl md:text-7xl lg:text-8xl">Hi, I'm Dipesh</h1>
             <h3 class="text-2xl pt-2 pb-10">a FrontEnd Web Developer</h3>
             <img class="w-72 rounded-full mx-auto" src="images/myImage.jpg" alt="My Image">
-            <p class="pl-12 lg:ml-32 xl:ml-20
+            <p class="pl-8 lg:ml-32 xl:ml-20
              py-10 text-2xl sm:text-3xl">I build and design websites.</p>
         </section>
     </div>
 
     <!-- Skills Section -->
-    <div id="skills" class="pt-10 pb-3 bg-gradient-to-l from-[#CDB6B6] to-[#b9b9d2]">
+    <div id="skills" class="pt-10 bg-[#CDB6B6]">
         <h2 class="text-4xl lg:text-5xl text-center">My Skills</h2>
 
         <!-- Web Design -->
         <div class="pt-10 pb-10">
             <img class="w-32 float-left md:w-40 lg:w-52 xl:w-64"
                 src="https://media.giphy.com/media/IHRIyAr24rTXLvIq8A/giphy.gif" alt="Web Designing Image">
-            <h3 class="text-3xl lg:text-4xl pb-3 font-bold">Web Designing:</h3>
+            <h3 class="text-3xl lg:text-4xl pt-20 pb-3 font-bold">Web Designing:</h3>
             <p class="text-2xl md:text-3xl pb-3 clear-left xl:clear-none lg:clear-none">I have a good understanding of
                 HTML, CSS, Bootstrap and Tailwind CSS.</p>
             <p class="text-1xl lg:text-xl lg:clear-left xl:clear-none">A few projects to showcase my designing skills
@@ -82,10 +84,10 @@
         <hr>
 
         <!-- Web Development -->
-        <div class="text-right pt-10 pb-10 bg-gradient-to-r from-[#CDB6B6] to-[#b9b9d2]">
+        <div class="text-right pt-10 pb-10 bg-[#b9b9d2]">
             <img class="w-32 float-right md:w-40 lg:w-52 xl:w-64"
                 src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif" alt="Web Development Image">
-            <h3 class="text-3xl lg:text-4xl pb-3 font-bold">Web Development:</h3>
+            <h3 class="text-3xl lg:text-4xl pt-20 pb-3 font-bold">Web Development:</h3>
             <p class="text-2xl md:text-3xl pb-3 clear-right xl:clear-none lg:clear-none" pb-3>I have a good grasp on
                 JAVASCRIPT and it's libraries such as jquery and
                 React.</p>
@@ -102,7 +104,7 @@
     </div>
 
     <!-- Footer Section -->
-    <div id="contact" class="text-center py-2 bg-gray-400">
+    <div id="contact" class="text-center py-2 bg-gray-500">
         <footer>
             <a class="px-4 text-3xl hover:text-gray-800" href="https://www.linkedin.com/in/dipesh-chaudhary-a89596136/"
                 target="_blank"><span class="fa-brands fa-linkedin"></span></a>
